@@ -4,15 +4,32 @@
   padding: 0 20px;
   box-sizing: border-box;
 }
-.botao {
+.botao,
+.botao-secundario {
   display: inline-block;
   padding: 16px 32px;
-  background: linear-gradient(#ffbf00, #f2a50c);
-  color: var(--cor-p5);
   border-radius: 4px;
   text-transform: uppercase;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
 }
+.botao {
+  background: linear-gradient(#ffbf00, #f2a50c);
+  color: var(--cor-p5);
+}
 .botao:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+.botao-secundario {
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+.botao-secundario:hover {
+  background: var(--cor-9);
+}
+@media (max-width: 350px) {
+  .botao,
+  .botao-secundario {
+    padding: 12px 24px;
+    font: 600 0.875rem/1.35 "Poppins", sans-serif;
+  }
 }

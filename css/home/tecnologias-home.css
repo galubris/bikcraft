@@ -54,3 +54,50 @@ p {
   object-position: left;
   height: 100%;
 }
+@media (max-width: 900px) {
+  .tecnologias-imagem {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .tecnologias-home {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .tecnologias-home-bg {
+    box-shadow: none;
+  }
+  .tecnologias-home {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .tecnologias-imagem {
+    display: none;
+  }
+  .tecnologias-home {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .botao-tecnologias {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .tecnologias-informacao h2,
+  p {
+    padding-bottom: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .botao-tecnologias {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .vantagens-tecnologias {
+    flex-direction: column;
+  }
+  .botao-tecnologias {
+    margin-bottom: 36px;
+    font: 500 1.2rem/1.5 "Poppins", sans-serif;
+  }
+}

@@ -14,8 +14,18 @@
 .seguros-planos {
   background-color: var(--cor-12);
   padding: 32px 32px 32px 60px;
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  columns: 2;
+  position: relative;
+}
+.seguros-planos a {
+  align-self: start;
+}
+.seguros-top {
+  display: flex;
+  justify-content: space-between;
 }
 .seguros-planos h3 {
   padding-bottom: 32px;
@@ -25,6 +35,9 @@
   display: flex;
   flex-direction: column;
   text-align: end;
+}
+.seguros-planos ul {
+  grid-column: 1 / -1;
 }
 .seguros-planos li + li {
   margin-top: 16px;
@@ -42,15 +55,27 @@
 .seguros-planos a {
   margin-top: 24px;
 }
-.botao-secundario {
-  display: inline-block;
-  padding: 16px 32px;
-  background: var(--cor-10);
-  color: var(--cor-2);
-  border-radius: 4px;
-  text-transform: uppercase;
-  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+@media (max-width: 850px) {
+  .seguros-container {
+    grid-template-columns: 1fr;
+  }
 }
-.botao-secundario:hover {
-  background: var(--cor-9);
+@media (max-width: 400px) {
+  .seguros-container {
+    grid-template-columns: 1fr;
+  }
+  .seguros-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .seguros-top h3 {
+    padding: 0px;
+  }
+  .seguros-planos {
+    align-items: center;
+    padding: 32px;
+  }
+  .seguros-planos a {
+    align-self: center;
+  }
 }

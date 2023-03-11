@@ -6,6 +6,7 @@
 .main-home {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 .introducao-home {
   display: flex;
@@ -18,4 +19,34 @@
 }
 main picture {
   margin-bottom: -120px;
+}
+@media (max-width: 1100px) {
+  .main-home {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 1050px) {
+  .main-home-bg {
+    box-shadow: none;
+    padding-bottom: 0px;
+  }
+  .introducao-home {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    justify-content: center;
+  }
+  main picture {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 700px) {
+  .main-home {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 60px;
+    max-height: 800px;
+  }
+  .main-home img {
+    display: none;
+  }
 }

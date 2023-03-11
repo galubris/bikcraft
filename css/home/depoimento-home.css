@@ -8,6 +8,7 @@
   border-radius: 0px;
   max-height: 520px;
   object-fit: cover;
+  height: 100%;
 }
 .depoimento-bg p {
   font: 900 2rem/1.25 "Merriweather", sans-serif;
@@ -39,4 +40,56 @@ p::before {
 }
 .depoimento-conteudo span {
   align-self: end;
+}
+@media (max-width: 1200px) {
+  .depoimento-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .depoimento-bg {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-height: 100%;
+  }
+  .depoimento-conteudo p::before {
+    top: -15px;
+  }
+}
+@media (max-width: 600px) {
+  .depoimento-bg p {
+    font: 900 1.5rem/1.25 "Merriweather", sans-serif;
+    max-width: 32ch;
+  }
+  .depoimento-conteudo p::after,
+  p::before {
+    font-size: 4rem;
+  }
+  .depoimento-conteudo p::before {
+    left: -44px;
+    top: -20px;
+  }
+}
+@media (max-width: 400px) {
+  .depoimento-bg p {
+    font: 900 1.2rem/1.25 "Merriweather", sans-serif;
+    max-width: 32ch;
+  }
+  .depoimento-conteudo span {
+    font-size: 0.75rem;
+  }
+  .depoimento-conteudo p::after,
+  p::before {
+    font-size: 3rem;
+  }
+  .depoimento-conteudo p::before {
+    left: -32px;
+    top: -10px;
+  }
+  .depoimento-conteudo p::after {
+    bottom: -20px;
+  }
 }
