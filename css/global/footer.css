@@ -1,0 +1,46 @@
+footer {
+  background-color: var(--cor-12);
+  padding: 60px;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 3fr 5fr 4fr;
+}
+footer li {
+  color: var(--cor-5);
+  font: 500 1.125rem/1.35 "Poppins", sans-serif;
+}
+footer h3 {
+  margin-bottom: 32px;
+}
+.footer-contato > ul li + li {
+  margin-top: 16px;
+}
+.footer-contato > ul li:nth-child(even)::after {
+  content: "";
+  max-width: 360px;
+  height: 1px;
+  display: block;
+  margin-top: 16px;
+  background-color: var(--cor-10);
+}
+.footer-redes {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+}
+.footer-redes img {
+  align-self: start;
+}
+.footer-informacoes li + li {
+  margin-top: 16px;
+}
+.footer-informacoes a {
+  color: var(--cor-5);
+}
+.footer-informacoes a:hover {
+  color: var(--cor-0);
+}
+.footer-copy {
+  margin-top: 60px;
+}

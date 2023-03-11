@@ -1,0 +1,14 @@
+@import "/css/utilidades/cores.css";
+@import "/css/utilidades/tipografia.css";
+@import "/css/global/geral.css";
+@import "/css/utilidades/componentes.css";
+@import "/css/global/header.css";
+@import "/css/global/footer.css";
+
+/* home */
+@import "/css/home/main-home.css";
+@import "/css/home/bicicletas-home.css";
+@import "/css/home/tecnologias-home.css";
+@import "/css/home/parceiros-home.css";
+@import "/css/home/depoimento-home.css";
+@import "/css/home/seguros-home.css";

@@ -1,0 +1,21 @@
+.main-home-bg {
+  background-color: var(--cor-12);
+  padding-bottom: 120px;
+  box-shadow: inset 0 -120px var(--cor-0);
+}
+.main-home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.introducao-home {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: end;
+  padding-bottom: 220px;
+  align-items: start;
+  margin-bottom: -120px;
+}
+main picture {
+  margin-bottom: -120px;
+}

@@ -1,0 +1,32 @@
+header {
+  background-color: var(--cor-12);
+  padding: 20px;
+}
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  gap: 32px;
+}
+header nav a {
+  color: var(--cor-0);
+  padding: 16px 0;
+  position: relative;
+}
+header nav a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  display: block;
+  position: absolute;
+  transition: 0.3s;
+  margin-top: 3px;
+  margin-left: 1px;
+}
+header nav a:hover::after {
+  width: 100%;
+}
