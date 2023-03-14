@@ -41,7 +41,7 @@
   content: "";
   width: 18px;
   height: 10px;
-  background: url("../../img/icones/seta.svg");
+  background: url("img/icones/seta.svg");
   margin-left: 12px;
   display: inline-block;
   transition: 0.2s;
