@@ -55,6 +55,63 @@
 .seguros-planos a {
   margin-top: 24px;
 }
+.vantagens-bg {
+  background-color: var(--cor-12);
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+.vantagens-bg ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px 80px;
+}
+.vantagens-bg h2 {
+  margin-bottom: 48px;
+}
+.perguntas {
+  padding: 120px 0;
+}
+.perguntas h2 {
+  margin-bottom: 80px;
+}
+.perguntas dt {
+  margin-bottom: 16px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+}
+.perguntas dl div + div {
+  padding-top: 32px;
+}
+.perguntas dd {
+  max-width: 75ch;
+  padding-left: 24px;
+}
+.perguntas dl div {
+  padding: 20px;
+}
+.perguntas div:nth-child(odd) {
+  background-color: var(--cor-1);
+}
+.perguntas dt::before {
+  content: "";
+  width: 16px;
+  height: 8px;
+  display: inline-block;
+  background-color: var(--cor-p1);
+}
+.perguntas dt::after {
+  content: "";
+  width: 14px;
+  height: 6px;
+  display: inline-block;
+  background: url(../../img/icones/seta-abrir.svg);
+  transition: 0.3s;
+}
+.perguntas dt:hover:after {
+  transform: rotate(180deg);
+}
 @media (max-width: 850px) {
   .seguros-container {
     grid-template-columns: 1fr;

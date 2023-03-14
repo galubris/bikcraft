@@ -1,0 +1,84 @@
+.bicicletas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 32px;
+  padding: 48px 0;
+}
+.bicicletas-imagem {
+  position: relative;
+}
+.bicicletas-imagem span {
+  position: absolute;
+  right: 0px;
+  top: 16px;
+  background-color: var(--cor-12);
+  padding: 8px 16px;
+  border-radius: 4px 0 0 4px;
+}
+.bicicletas-informacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 0px;
+  position: relative;
+}
+.bicicletas-informacao h2,
+p {
+  grid-column: 1 / -1;
+}
+.bicicletas-informacao h2::before {
+  content: "";
+  width: 16px;
+  height: 8px;
+  display: inline-block;
+  background-color: var(--cor-p1);
+  position: absolute;
+  top: -32px;
+}
+.bicicletas-informacao a {
+  place-self: end;
+  max-width: max-content;
+}
+.bicicletas-informacao li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.bicicletas-bg {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
+}
+@media (max-width: 800px) {
+  .bicicletas {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .bicicletas-bg {
+    background: var(--cor-11);
+  }
+  .bicicletas-informacao {
+    grid-template-columns: 1fr;
+  }
+  .bicicletas-informacao ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 0px;
+  }
+  .bicicletas-informacao a {
+    justify-self: start;
+  }
+}
+@media (max-width: 600px) {
+  .bicicletas-informacao li {
+    font: 500 1.125rem/1.35 "Poppins", sans-serif;
+  }
+}
+@media (max-width: 500px) {
+  .bicicletas-informacao li {
+    font: 500 0.875rem/1.35 "Poppins", sans-serif;
+  }
+}
+@media (max-width: 300px) {
+  .bicicletas-informacao li {
+    font: 500 0.75rem/1.35 "Poppins", sans-serif;
+  }
+}

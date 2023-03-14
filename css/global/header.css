@@ -1,6 +1,6 @@
 header {
   background-color: var(--cor-12);
-  padding: 20px;
+  padding: 32px 20px;
 }
 header > div {
   display: flex;
@@ -15,6 +15,7 @@ header nav a {
   color: var(--cor-0);
   padding: 16px 0;
   position: relative;
+  border-radius: 4px;
 }
 header nav a::after {
   content: "";
@@ -30,6 +31,15 @@ header nav a::after {
 header nav a:hover::after {
   width: 100%;
 }
+.s a::after {
+  width: 100%;
+}
+.b a::after {
+  width: 100%;
+}
+.c a::after {
+  width: 100%;
+}
 @media (max-width: 1050px) {
   header nav a {
     background-color: var(--cor-11);
@@ -37,6 +47,15 @@ header nav a:hover::after {
   }
   header nav a::after {
     display: none;
+  }
+  .s a {
+    background-color: var(--cor-10);
+  }
+  .b a {
+    background-color: var(--cor-10);
+  }
+  .c a {
+    background-color: var(--cor-10);
   }
 }
 @media (max-width: 700px) {

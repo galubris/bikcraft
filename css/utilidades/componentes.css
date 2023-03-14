@@ -5,18 +5,21 @@
   box-sizing: border-box;
 }
 .botao,
-.botao-secundario {
+.botao-secundario,
+.botao-seta {
   display: inline-block;
   padding: 16px 32px;
   border-radius: 4px;
   text-transform: uppercase;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
 }
-.botao {
+.botao,
+.botao-seta {
   background: linear-gradient(#ffbf00, #f2a50c);
   color: var(--cor-p5);
 }
-.botao:hover {
+.botao:hover,
+.botao-seta:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
 .botao-secundario {
@@ -26,10 +29,37 @@
 .botao-secundario:hover {
   background: var(--cor-9);
 }
+.titulo {
+  background-color: var(--cor-11);
+  padding: 48px 0px;
+}
+.botao-seta {
+  display: grid;
+  align-items: center;
+  position: relative;
+  padding-right: 54px;
+}
+.botao-seta::after {
+  content: "";
+  width: 18px;
+  height: 10px;
+  background: url(../../img/icones/seta.svg);
+  display: inline-block;
+  position: absolute;
+  right: 24px;
+  transition: 0.2s;
+}
+.botao-seta:hover::after {
+  right: 20px;
+}
 @media (max-width: 350px) {
   .botao,
-  .botao-secundario {
+  .botao-secundario,
+  .botao-seta {
     padding: 12px 24px;
     font: 600 0.875rem/1.35 "Poppins", sans-serif;
+  }
+  .botao-seta {
+    padding-right: 50px;
   }
 }
