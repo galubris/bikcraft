@@ -43,7 +43,7 @@
   content: "";
   width: 18px;
   height: 10px;
-  /* background: url("../../img/icones/seta.svg"); */
+  background: url("../../img/icones/seta.svg");
   display: inline-block;
   position: absolute;
   right: 24px;
