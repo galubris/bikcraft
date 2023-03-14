@@ -22,6 +22,9 @@
   gap: 16px 0px;
   position: relative;
 }
+.bicicletas-informacao li + li {
+  margin-top: 12px;
+}
 .bicicletas-informacao h2,
 p {
   grid-column: 1 / -1;
