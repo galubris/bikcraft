@@ -1,3 +1,4 @@
+/* Home */
 .bicicletas {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -50,6 +51,7 @@ p {
 .bicicletas-bg {
   background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
 }
+
 @media (max-width: 800px) {
   .bicicletas {
     grid-template-columns: 1fr;
