@@ -30,7 +30,6 @@
 .bicicleta-compra {
   display: flex;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
   gap: 12px;
   margin-bottom: 48px;
 }
@@ -97,4 +96,52 @@
 }
 .seguro-informacao h2 {
   margin-bottom: 32px;
+}
+@media (max-width: 1080px) {
+  .bicicleta-imagem {
+    padding-bottom: 32px;
+  }
+  @media (max-width: 850px) {
+    .bicicleta-compra {
+      flex-direction: column;
+      align-items: start;
+    }
+    .bicicleta-informacoes ul {
+      gap: 16px;
+    }
+  }
+  @media (max-width: 650px) {
+    .bicicleta-conteudo {
+      grid-template-columns: 1fr;
+    }
+    .bicicleta-imagem {
+      grid-row: 2;
+    }
+    .bicicleta-compra {
+      flex-direction: row;
+      align-items: center;
+    }
+    .seguro {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .seguro-imagem {
+      grid-row: 2;
+      margin: 0;
+    }
+    .seguro-bg {
+      margin-top: 0px;
+      box-shadow: inset 0 -300px var(--cor-12);
+    }
+  }
+}
+@media (max-width: 370px) {
+  .bicicleta-compra {
+    flex-direction: column;
+    align-items: start;
+  }
+  .bicicleta-informacoes ul {
+    grid-template-columns: 1fr;
+    gap: 32px 16px;
+  }
 }

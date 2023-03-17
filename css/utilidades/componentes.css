@@ -49,7 +49,7 @@
 .botao-seta:hover::after {
   transform: translateX(4px);
 }
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   .botao,
   .botao-secundario,
   .botao-seta {
