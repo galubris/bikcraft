@@ -21,3 +21,6 @@
 /* bicicletas */
 @import "/css/paginas/bicicletas-lista.css";
 @import "/css/paginas/bicicleta-pag.css";
+
+/* contato */
+@import "/css/paginas/contato.css";

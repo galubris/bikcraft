@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="contato">
   <header>
     <div class="container">
       <a href="./index.html"><img src="img/bikcraft.svg" alt=""></a>
@@ -26,8 +26,96 @@
       </nav>
     </div>
   </header>
+  <main>
+    <div class="titulo">
+      <p class="font-2-l-b cor-5 container">respostas em até 24h</p>
+      <h1 class="font-1-xxl cor-0 container">nosso contato<span class="cor-p1">.</span></h1>
+    </div>
+    <div class="contato-bg">
+      <div class="container contato">
+        <div class="contato-informacoes">
+          <h2 class="font-1-m cor-0">Lojas Online</h2>
+          <div class="contato-endereco font-2-s cor-4">
+            <p>Rua Ali Perto, 35</p>
+            <p>Rio de Janeiro - RJ</p>
+            <p>Brasil - Terra - Vita Láctea</p>
+          </div>
+          <address class="font-2-s cor-4">
+            <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+            <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+            <a class="contato-numero" href="tel:+55 21 99999-9999">+55 21 99999-9999</a>
+          </address>
+          <div>
+            <ul class="contato-redes">
+              <li><a href="/"><img src="img/redes/instagram-p.svg" alt=""></a></li>
+              <li><a href="/"><img src="img/redes/facebook-p.svg" alt=""></a></li>
+              <li><a href="/"><img src="img/redes/youtube-p.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="contato-form">
+          <form class="form" action="./contato.html">
+            <div class="form-nome">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="
+              nome" placeholder="Seu nome">
+            </div>
+            <div class="form-telefone">
+              <label for="telefone">Telefone</label>
+              <input type="text" id="telefone" name="
+              telefone" placeholder="(11) 99999-9999">
+            </div>
+            <div class="form-email">
+              <label for=eEmail">Email</label>
+              <input type="email" id="email" name="
+              email" placeholder="contato@email.com">
+            </div>
+            <div class="form-mensagem">
+              <label for="mensagem">Mensagem</label>
+              <textarea rows="5" id="mensagem" name="
+              mensagem" placeholder="O que você precisa?"></textarea>
+            </div>
+            <button class="botao">enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <article class="container lojas">
+    <h2 class="font-1-xxl">lojas locais<span class="cor-p1">.</span></h2>
+    <div class="lojas-container">
+      <img src="img/lojas/rj.jpg" alt="">
+      <div class="lojas-conteudo">
+        <h3 class="font-1-xl">Rio de Janeiro</h3>
+        <div class="lojas-endereco font-2-s cor-8">
+          <p>Rua Ali Perto, 25</p>
+          <p>Rio de Janeiro - RJ</p>
+        </div>
+        <div class="lojas-contato font-2-s cor-8">
+          <a href="mailto:rio@bikcraft.com">rio@bikcraft.com</a>
+          <a href="tel:21 9999-9999">21 9999-9999</a>
+        </div>
+        <p class="font-1-s lojas-horario"><img src="img/icones/horario.svg" alt="">08-18h de seg à dom</p>
+      </div>
+    </div>
+    <div class="lojas-container">
+      <img src="img/lojas/sp.jpg" alt="">
+      <div class="lojas-conteudo">
+        <h3 class="font-1-xl">São Paulo</h3>
+        <div class="lojas-endereco font-2-s cor-8">
+          <p>Rua Ali Perto, 25</p>
+          <p>São Paulo - SP</p>
+        </div>
+        <div class="lojas-contato font-2-s cor-8">
+          <a href="mailto:rio@bikcraft.com">sp@bikcraft.com</a>
+          <a href="tel:21 9999-9999">11 9999-9999</a>
+        </div>
+        <p class="font-1-s lojas-horario"><img src="img/icones/horario.svg" alt="">08-18h de seg à dom</p>
+      </div>
+    </div>
+  </article>
   <footer>
-    <div class="container footer-container">
+    <div class=" container footer-container">
       <img src="img/bikcraft.svg" alt="">
       <div class="footer-contato">
         <h3 class="font-2-l-b cor-0">contato</h3>
