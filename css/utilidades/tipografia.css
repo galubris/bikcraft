@@ -70,9 +70,6 @@
   .font-2-l-b {
     font: 400 1rem/1.5 "Roboto", sans-serif;
   }
-  .font-2-s {
-    font: 400 0.75rem/1.5 "Roboto", sans-serif;
-  }
 }
 @media (max-width: 400px) {
   .font-1-xxl {
