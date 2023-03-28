@@ -1,10 +1,9 @@
-/* Home */
 .bicicletas {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 32px;
-  padding: 48px 0;
+  padding: 48px 16px;
 }
 .bicicletas-imagem {
   position: relative;

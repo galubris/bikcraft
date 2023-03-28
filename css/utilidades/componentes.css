@@ -52,6 +52,9 @@
 .botao-seta:hover::after {
   transform: translateX(4px);
 }
+.col-2 {
+  grid-column: 1/-1;
+}
 @media (max-width: 450px) {
   .botao,
   .botao-secundario,
