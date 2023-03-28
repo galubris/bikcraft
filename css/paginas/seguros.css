@@ -46,7 +46,7 @@
   position: relative;
 }
 .seguros-planos li::before {
-  content: url(/img/icones/lista.svg);
+  content: url("img/icones/lista.svg");
   display: inline-block;
   position: absolute;
   left: -20px;
