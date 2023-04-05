@@ -74,12 +74,17 @@
 .perguntas h2 {
   margin-bottom: 80px;
 }
-.perguntas dt {
+.perguntas button {
   margin-bottom: 16px;
   display: grid;
   align-items: center;
   grid-template-columns: auto 1fr auto;
   gap: 8px;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: start;
+  cursor: pointer;
 }
 .perguntas dl div + div {
   padding-top: 32px;
@@ -87,6 +92,10 @@
 .perguntas dd {
   max-width: 75ch;
   padding-left: 24px;
+  display: none;
+}
+.perguntas dd.ativo {
+  display: block;
 }
 .perguntas dl div {
   padding: 20px;
@@ -94,22 +103,23 @@
 .perguntas div:nth-child(odd) {
   background-color: var(--cor-1);
 }
-.perguntas dt::before {
+.perguntas button::before {
   content: "";
   width: 16px;
   height: 8px;
   display: inline-block;
   background-color: var(--cor-p1);
 }
-.perguntas dt::after {
+.perguntas button::after {
   content: "";
   width: 14px;
   height: 6px;
   display: inline-block;
-  background: url(../../img/icones/seta-abrir.svg);
+  background: url("img/icones/seta-abrir.svg");
   transition: 0.3s;
 }
-.perguntas dt:hover:after {
+.perguntas button:hover::after,
+.perguntas button[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 @media (max-width: 850px) {
