@@ -27,3 +27,26 @@ function mostrarPergunta(pergunta) {
 }
 
 perguntas.forEach(mostrarPergunta);
+
+// galeria de imagens
+const galeria = document.querySelectorAll(".bicicleta-imagem img");
+const galeriaContainer = document.querySelector(".bicicleta-imagem");
+
+function trocarImagem(event) {
+  const img = event.currentTarget;
+  const media = matchMedia("(min-width: 1100px)").matches;
+  if (media) {
+    galeriaContainer.prepend(img);
+  }
+}
+
+function eventoGaleria(img) {
+  img.addEventListener("click", trocarImagem);
+}
+
+galeria.forEach(eventoGaleria);
+
+// animação
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}

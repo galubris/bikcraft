@@ -8,7 +8,7 @@
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.">
   <title>Bikcraft - Bicicletas Elétricas</title>
   <link href="style.min.css" rel="preload" as="style">
-  <link href="style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -30,16 +30,16 @@
   <main class="main-home-bg">
     <div class="container main-home">
       <div class="introducao-home">
-        <h1 class=" font-1-xxl cor-0">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
-        <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <a href="bicicletas.html" class="botao">escolha a sua</a>
+        <h1 class=" font-1-xxl cor-0 fadeInDown" data-anime="200">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
+        <p class="font-2-l cor-5 fadeInDown" data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a href="bicicletas.html" class="botao fadeInDown" data-anime="600">escolha a sua</a>
       </div>
       <picture>
-        <img src="img/fotos/introducao.jpg" alt="">
+        <img class="fadeInDown" data-anime="800" src="img/fotos/introducao.jpg" alt="Bicicleta Preta">
       </picture>
     </div>
   </main>
-  <article class="home-bicicletas">
+  <article class="home-bicicletas fadeInDown" data-anime="1000">
     <h2 class="font-1-xxl container">escolha a sua<span class="cor-p1">.</span></h2>
     <ul>
       <li><a href="bicicletas/Magic.html">
@@ -181,6 +181,7 @@
       <span class="font-2-m cor-6">Bikcraft © Alguns direitos reservados.</span>
     </div>
   </footer>
+  <script src="script/plugins/simple-anime.js"></script>
   <script src="script/scritp.js"></script>
 </body>
 

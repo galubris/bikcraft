@@ -8,7 +8,7 @@
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.">
   <title>Bikcraft - Bicicletas Elétricas</title>
   <link href="style.min.css" rel="preload" as="style">
-  <link href="style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
       <p class="font-2-l-b cor-5 container">escolha o seguro</p>
       <h1 class="font-1-xxl cor-0 container">você seguro<span class="cor-p1">.</span></h1>
       <div class="container seguros-container">
-        <div class="seguros-planos">
+        <div data-anime="200" class="seguros-planos fadeInLeft">
           <div class="seguros-top">
             <h3 class="font-1-xl cor-6">prata</h3>
             <div class="seguros-valor">
@@ -48,7 +48,7 @@
           </ul>
           <a href="orcamento.html?tipo=seguro&produto=prata" class="botao-secundario">inscreva-se</a>
         </div>
-        <div class="seguros-planos">
+        <div data-anime="200" class="seguros-planos fadeInRight">
           <div class="seguros-top">
             <h3 class="font-1-xl cor-p1">ouro</h3>
             <div class="seguros-valor">
@@ -168,6 +168,7 @@
       <span class="font-2-m cor-6">Bikcraft © Alguns direitos reservados.</span>
     </div>
   </footer>
+  <script src="script/plugins/simple-anime.js"></script>
   <script src="script/scritp.js"></script>
 </body>
 
